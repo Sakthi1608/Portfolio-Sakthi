@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <span>Brahma </span>Sakthieswari<span> G</span>
+        </a>
+        <nav class="navbar">
+            <a href="#" class="active">Portfolio</a>
+            <a href="#">About</a>
+            <a href="#">Certifications</a>
+            <a href="#">Projects</a>
+            <a href="#">Education</a>
+        </nav>
+
+        <a href="#" class ="Contact">Contact Me</a>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>I'm <span>Brahma Sakthieswari</span></h1>
+            <p>Hello! I am Brahma Sakthieswari G, a passionate web developer with a keen eye for design and a dedication to creating seamless user experiences. With a background in computer science and a love for technology, I specialize in building responsive and interactive websites that not only look great but also function flawlessly.</p>
+            <div class="btn-box">
+                <a href="https://drive.google.com/file/d/1Y2dFKbW1KkbvsRl1w4X439-qus24_qes/view?usp=drive_link" target="_blank">
+                    <button class="btn-1">Resume</button>
+                </a>
+            </div>
+        </div>
+        <div class="img-box">
+           <img src="image.jpeg">
+        </div>
+    </section>
+    <section id="education">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Education</h1>
+        <div class="education-container">
+            <div class="education-item">
+                <img src="school.jpg" alt="School Picture" class="education-img">
+                <div class="education-details">
+                    <h2 class="education-title">St. Ignatius' Convent Higher Secondary School is a school for girls in Palayamkottai, Tirunelveli.</h2>
+                    <div class="education-subsection">
+                        <h3 class="subsection-title">10th Grade (SSLC)</h3>
+                        <p class="education-description">93.5%</p>
+                    </div>
+                    <div class="education-subsection">
+                        <h3 class="subsection-title">12th Grade (HSC)</h3>
+                        <p class="education-description">95.67%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="education-item">
+                <img src="college.jpg" alt="College Picture" class="education-img">
+                <div class="education-details">
+                    <h2 class="education-title">National Engineering College, Kovilpatti</h2>
+                    <p class="education-description">B.E - CSE</p>
+                    <p class="education-description">CGPA-8.41</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="certifications">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Certifications</h1>
+        <div class="certification-folders">
+          <div class="certification-folder" onclick="toggleCertifications('intra-college')">
+            <div class="folder-content">
+              <img src="trophy1.jpg" alt="Participations and Achievements" class="folder-icon" />
+              <h2>Achievents</h2>
+              <a href="https://drive.google.com/drive/folders/1WTlW82EBaVH1U1TNq_OmSbENHOQK4jH5?usp=drive_link" target="_blank">
+                <button class="view-btn">View Certifications</button>
+              </a>
+            </div>
+          </div>
+          <div class="certification-folder" onclick="toggleCertifications('online-certs')">
+            <div class="folder-content">
+              <img src="online.jpg" alt="Online Certifications" class="folder-icon" />
+              <h2>Online Certifications</h2>
+              <a href="https://drive.google.com/drive/folders/1qEXNk2M7uTjFfNRshMNBPfA4sS6ykGpK?usp=drive_link" target="_blank">
+                <button class="view-btn">View Certifications</button>
+              </a>
+            </div>
+          </div>
+          <div class="certification-folder" onclick="toggleCertifications('inter-certs')">
+            <div class="folder-content">
+              <img src="coging.jpg" alt="Internships" class="folder-icon" />
+              <h2>Internships</h2>
+              <a href="https://drive.google.com/file/d/1x241Ih5_8GNIgN_hVwUV7iKXGOeezFKp/view?usp=drive_link" target="_blank">
+                <button class="view-btn">View Certifications</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="certifications-container" id="intra-college" style="display:none;">
+          <div class="certification-item">
+            <img src="./assets/intra/certificate1.jpeg" alt="Certification 1" class="certification-img" />
+            <h3>Certification 1</h3>
+          </div>
+          <div class="certification-item">
+            <img src="./assets/intra/certificate2.jpeg" alt="Certification 2" class="certification-img" />
+            <h3>Certification 2</h3>
+          </div>
+          <div class="certification-item">
+            <img src="./assets/intra/certificate3.jpeg" alt="Certification 3" class="certification-img" />
+            <h3>Certification 3</h3>
+          </div>
+          <!-- Add more intra-college certifications as needed -->
+        </div>
+        
+        <div class="certifications-container" id="online-certs" style="display:none;">
+          <div class="certification-item">
+            <img src="./assets/online/Akshaya-Cloud.jpeg" alt="Certification 4" class="certification-img" />
+            <h3>NPTEL Cloud Computing</h3>
+          </div>
+          <div class="certification-item">
+            <img src="./assets/online/Akshaya-Iot.jpeg" alt="Certification 5" class="certification-img" />
+            <h3>NPTEL IOT</h3>
+          </div>
+          <div class="certification-item">
+            <img src="./assets/online/Akshaya-IIOT.jpeg" alt="Certification 6" class="certification-img" />
+            <h3>NPTEL IIOT 4.0</h3>
+          </div>
+          <div class="certification-item">
+            <img src="./assets/online/Akshaya-PSOSM.jpeg" alt="Certification 7" class="certification-img" />
+            <h3>NPTEL Privacy and Security in online social media</h3>
+          </div>
+          <div class="certification-item">
+            <img src="./assets/online/Akshaya-Scaler.jpeg" alt="Certification 8" class="certification-img" />
+            <h3>DBMS Scaler</h3>
+          </div>
+          <div class="certification-item">
+            <img src="./assets/online/Akshaya-Infosys.jpeg" alt="Certification 9" class="certification-img" />
+            <h3>DBMS Infosys</h3>
+          </div>
+          <div class="certification-item">
+            <img src="./assets/online/Akshaya-Cpp.jpeg" alt="Certification 10" class="certification-img" />
+            <h3>Cpp Certificate</h3>
+          </div>
+          <div class="certification-item">
+            <img src="./assets/online/Akshaya-Internship.jpeg" alt="Certification 11" class="certification-img" />
+            <h3>Internship Certificate</h3>
+          </div>
+          <!-- Add more online certifications as needed -->
+        </div>
+      
+        <div class="certifications-container" id="inter-certs" style="display:none;">
+          <div class="certification-item">
+            <img src="./assets/inter/Akshaya-Ramakrishna-Coding.jpeg" alt="Certification 3" class="certification-img" />
+            <h3>Certification 1</h3>
+          </div>
+          <div class="certification-item">
+            <img src="./assets/inter/Akshaya-CIT-PPT.jpeg" alt="Certification 4" class="certification-img" />
+            <h3>Certification 2</h3>
+          </div>
+          <div class="certification-item">
+            <img src="./assets/inter/Akshaya-CIT-Coding.jpeg" alt="Certification 4" class="certification-img" />
+            <h3>Certification 3</h3>
+          </div>
+          <div class="certification-item">
+            <img src="./assets/inter/Akshaya-CIT-Debug.jpeg" alt="Certification 4" class="certification-img" />
+            <h3>Certification 4</h3>
+          </div>
+          <!-- Add more inter certifications as needed -->
+        </div>
+      </section>
+      <!-- SKILLS SECTION -->
+<section id="skills">
+    <div class="section__text">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+    </div>
+    <div class="skills-container">
+      <div class="skill-category">
+       
+        <h2 class="category-title">Programming Languages</h2>
+        <div class="skills-list">
+          <div class="skill-item">
+            <h3 class="skill-name">HTML</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+               
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">CSS</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">Javascript</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">JAVA</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">Python</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 86%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">SQL</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 98%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">C</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3 class="skill-name">C++</h3>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+      <!-- Add more skill categories as needed -->  
+    </div>
+  </section>
+</section>
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:examplemail@gmail.com">2212048@nec.edu.in</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a>LinkedIn</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="git.png"
+        alt="Github icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://github.com/Sakthi1608">Github</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2024 Brahma Sakthieswari. All Rights Reserved.</p>
+</footer>
+     
+</body>
+</html>
